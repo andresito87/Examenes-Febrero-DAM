@@ -1,0 +1,5 @@
+Buenas tardes Fran!!.
+Aquí te envío el examen y hay un par de cosas que quería comentar.
+El ejercicio 2 y 3 lo he hecho por separado para no modificar ningún método en el 3 y que afectada al ejercicio 2. Por eso en el proyecto te vas a encontrar una una carpeta con el nombre Ejercicio 3.
+Por otro lado, en el ejercicio 4 no he entendido lo del long. He preguntado a las profesoras que había en el aula y tampoco me lo han sabido aclarar y incluso a los compañeros del aula y tampoco. AL final he optado por una solución, que si bien creo que es correcta, no contempla un atributo del tipo Long. Espero que esta modificación no altere el resultado del examen y si lo hace pues que no sea mucho.
+Muchas gracias!!!!
