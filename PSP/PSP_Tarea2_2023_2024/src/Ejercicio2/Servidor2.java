@@ -1,0 +1,105 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Ejercicio2;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ *
+ * @author profe
+ */
+public class Servidor2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int numeroPuerto=6000;
+        int clave = generarClave();
+        int intento=0;
+        boolean descifrada = false;
+        int numIntentos=0;
+        ServerSocket servidor=null;
+        Socket clienteConectado = null;
+        InputStream entrada = null;
+        OutputStream salida = null;
+        DataInputStream flujoEntrada=null;
+        DataOutputStream flujoSalida = null;
+        String mensaje="";
+        
+        try {
+            servidor = new ServerSocket(numeroPuerto);
+
+            System.out.println("Esperando al cliente...");
+
+            clienteConectado = servidor.accept();
+
+            //CREO FLUJO DE ENTRADA DEL CLIENTE
+            entrada = clienteConectado.getInputStream();
+            flujoEntrada = new DataInputStream(entrada);
+
+            //CREO FLUJO DE SALIDA AL CLIENTE
+            salida = clienteConectado.getOutputStream();
+            flujoSalida = new DataOutputStream(salida);
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Servidor2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        System.out.println("Se conecta un cliente que intenta descifrar la clave.");
+        
+        while(!descifrada && numIntentos<1000){
+
+            try {
+                //EL CLIENTE ME ENVÍA UNA PRUEBA DE CLAVE
+                intento = Integer.parseInt(flujoEntrada.readUTF());
+
+                numIntentos++;
+                //ENVÍO LA RESPUESTA ANTE EL INTENTO
+                if(clave == intento){
+                    flujoSalida.writeUTF("Has acertado la clave en "+numIntentos+" intentos.");
+                    descifrada=true;
+                }else if(numIntentos <1000){
+                    flujoSalida.writeUTF("Clave incorrecta. Llevas "+numIntentos+" intentos.");
+                }else{
+                    flujoSalida.writeUTF("Has superado el número de intentos permitidos.");
+                }
+
+            } catch (IOException ex) {
+                    Logger.getLogger(Servidor2.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(descifrada)
+            System.out.println("El cliente ha descifrado la clave en "+numIntentos+" intentos.");
+        else
+            System.out.println("El cliente ha agotado el número de intentos máximo sin descifrar la clave.");
+        try {
+            //CERRAR STREAMS Y SOCKETS
+            entrada.close();
+            flujoEntrada.close();
+            salida.close();
+            flujoSalida.close();
+            clienteConectado.close();
+            servidor.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Servidor2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public static int generarClave(){
+        int numero = (int) (Math.random() * 9999) + 1;
+        return numero;
+    }
+    
+}
