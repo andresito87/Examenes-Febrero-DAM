@@ -5,8 +5,6 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.SocketException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -48,7 +46,7 @@ public class Cliente extends Thread {
 
             System.out.println(this.nombreCliente + " recibe la frase: " + fraseRecibida);
 
-            Thread.sleep(9000);
+            Thread.sleep(1000);
             skCliente.close();
             flujoEntrada.close();
             flujoSalida.close();

@@ -1,0 +1,851 @@
+Hilo productor 1 introduce el valor 8 en la posici贸n 1, Array = 8, Suma = 0
+Hilo productor 1 introduce el valor 0 en la posici贸n 2, Array = 8 - 0, Suma = 0
+Hilo productor 1 introduce el valor 7 en la posici贸n 3, Array = 8 - 0 - 7, Suma = 0
+Hilo productor 1 introduce el valor 8 en la posici贸n 4, Array = 8 - 0 - 7 - 8, Suma = 0
+Hilo productor 1 introduce el valor 2 en la posici贸n 5, Array = 8 - 0 - 7 - 8 - 2, Suma = 0
+Hilo productor 1 introduce el valor 5 en la posici贸n 6, Array = 8 - 0 - 7 - 8 - 2 - 5, Suma = 0
+Hilo productor 1 introduce el valor 2 en la posici贸n 7, Array = 8 - 0 - 7 - 8 - 2 - 5 - 2, Suma = 0
+Hilo productor 1 introduce el valor 6 en la posici贸n 8, Array = 8 - 0 - 7 - 8 - 2 - 5 - 2 - 6, Suma = 0
+Hilo productor 1 introduce el valor 4 en la posici贸n 9, Array = 8 - 0 - 7 - 8 - 2 - 5 - 2 - 6 - 4, Suma = 0
+Hilo productor 1 introduce el valor 3 en la posici贸n 10, Array = 8 - 0 - 7 - 8 - 2 - 5 - 2 - 6 - 4 - 3, Suma = 0
+Hilo consumidor saca el valor 3 de la posici贸n 10, Array = 8 - 0 - 7 - 8 - 2 - 5 - 2 - 6 - 4, Suma = 3
+Hilo consumidor saca el valor 4 de la posici贸n 9, Array = 8 - 0 - 7 - 8 - 2 - 5 - 2 - 6, Suma = 7
+Hilo consumidor saca el valor 6 de la posici贸n 8, Array = 8 - 0 - 7 - 8 - 2 - 5 - 2, Suma = 13
+Hilo consumidor saca el valor 2 de la posici贸n 7, Array = 8 - 0 - 7 - 8 - 2 - 5, Suma = 15
+Hilo consumidor saca el valor 5 de la posici贸n 6, Array = 8 - 0 - 7 - 8 - 2, Suma = 20
+Hilo consumidor saca el valor 2 de la posici贸n 5, Array = 8 - 0 - 7 - 8, Suma = 22
+Hilo consumidor saca el valor 8 de la posici贸n 4, Array = 8 - 0 - 7, Suma = 30
+Hilo consumidor saca el valor 7 de la posici贸n 3, Array = 8 - 0, Suma = 37
+Hilo consumidor saca el valor 0 de la posici贸n 2, Array = 8, Suma = 37
+Hilo consumidor saca el valor 8 de la posici贸n 1, Array = , Suma = 45
+Hilo productor 2 introduce el valor 0 en la posici贸n 1, Array = 0, Suma = 45
+Hilo productor 2 introduce el valor 4 en la posici贸n 2, Array = 0 - 4, Suma = 45
+Hilo productor 2 introduce el valor 6 en la posici贸n 3, Array = 0 - 4 - 6, Suma = 45
+Hilo productor 2 introduce el valor 2 en la posici贸n 4, Array = 0 - 4 - 6 - 2, Suma = 45
+Hilo productor 2 introduce el valor 3 en la posici贸n 5, Array = 0 - 4 - 6 - 2 - 3, Suma = 45
+Hilo productor 2 introduce el valor 5 en la posici贸n 6, Array = 0 - 4 - 6 - 2 - 3 - 5, Suma = 45
+Hilo productor 2 introduce el valor 9 en la posici贸n 7, Array = 0 - 4 - 6 - 2 - 3 - 5 - 9, Suma = 45
+Hilo productor 2 introduce el valor 7 en la posici贸n 8, Array = 0 - 4 - 6 - 2 - 3 - 5 - 9 - 7, Suma = 45
+Hilo productor 2 introduce el valor 2 en la posici贸n 9, Array = 0 - 4 - 6 - 2 - 3 - 5 - 9 - 7 - 2, Suma = 45
+Hilo productor 2 introduce el valor 6 en la posici贸n 10, Array = 0 - 4 - 6 - 2 - 3 - 5 - 9 - 7 - 2 - 6, Suma = 45
+Hilo consumidor saca el valor 6 de la posici贸n 10, Array = 0 - 4 - 6 - 2 - 3 - 5 - 9 - 7 - 2, Suma = 51
+Hilo consumidor saca el valor 2 de la posici贸n 9, Array = 0 - 4 - 6 - 2 - 3 - 5 - 9 - 7, Suma = 53
+Hilo consumidor saca el valor 7 de la posici贸n 8, Array = 0 - 4 - 6 - 2 - 3 - 5 - 9, Suma = 60
+Hilo consumidor saca el valor 9 de la posici贸n 7, Array = 0 - 4 - 6 - 2 - 3 - 5, Suma = 69
+Hilo consumidor saca el valor 5 de la posici贸n 6, Array = 0 - 4 - 6 - 2 - 3, Suma = 74
+Hilo consumidor saca el valor 3 de la posici贸n 5, Array = 0 - 4 - 6 - 2, Suma = 77
+Hilo consumidor saca el valor 2 de la posici贸n 4, Array = 0 - 4 - 6, Suma = 79
+Hilo consumidor saca el valor 6 de la posici贸n 3, Array = 0 - 4, Suma = 85
+Hilo consumidor saca el valor 4 de la posici贸n 2, Array = 0, Suma = 89
+Hilo consumidor saca el valor 0 de la posici贸n 1, Array = , Suma = 89
+Hilo productor 2 introduce el valor 5 en la posici贸n 1, Array = 5, Suma = 89
+Hilo productor 2 introduce el valor 2 en la posici贸n 2, Array = 5 - 2, Suma = 89
+Hilo productor 2 introduce el valor 10 en la posici贸n 3, Array = 5 - 2 - 10, Suma = 89
+Hilo productor 2 introduce el valor 0 en la posici贸n 4, Array = 5 - 2 - 10 - 0, Suma = 89
+Hilo productor 2 introduce el valor 7 en la posici贸n 5, Array = 5 - 2 - 10 - 0 - 7, Suma = 89
+Hilo productor 2 introduce el valor 4 en la posici贸n 6, Array = 5 - 2 - 10 - 0 - 7 - 4, Suma = 89
+Hilo productor 2 introduce el valor 0 en la posici贸n 7, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0, Suma = 89
+Hilo productor 2 introduce el valor 10 en la posici贸n 8, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0 - 10, Suma = 89
+Hilo productor 2 introduce el valor 7 en la posici贸n 9, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0 - 10 - 7, Suma = 89
+Hilo productor 2 introduce el valor 1 en la posici贸n 10, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0 - 10 - 7 - 1, Suma = 89
+Hilo consumidor saca el valor 1 de la posici贸n 10, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0 - 10 - 7, Suma = 90
+Hilo consumidor saca el valor 7 de la posici贸n 9, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0 - 10, Suma = 97
+Hilo consumidor saca el valor 10 de la posici贸n 8, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0, Suma = 107
+Suma m谩xima alcanzada: 107, Array = 5 - 2 - 10 - 0 - 7 - 4 - 0, Suma = 107
+Hilo productor 1 introduce el valor 10 en la posici髇 1, Array = 10, Suma = 0
+Hilo consumidor saca el valor 10 de la posici髇 1, Array = , Suma = 10
+Hilo productor 2 introduce el valor 5 en la posici髇 1, Array = 5, Suma = 10
+Hilo productor 1 introduce el valor 7 en la posici髇 2, Array = 5 - 7, Suma = 10
+Hilo productor 2 introduce el valor 2 en la posici髇 3, Array = 5 - 7 - 2, Suma = 10
+Hilo consumidor saca el valor 2 de la posici髇 3, Array = 5 - 7, Suma = 12
+Hilo productor 1 introduce el valor 7 en la posici髇 3, Array = 5 - 7 - 7, Suma = 12
+Hilo productor 2 introduce el valor 8 en la posici髇 4, Array = 5 - 7 - 7 - 8, Suma = 12
+Hilo productor 2 introduce el valor 6 en la posici髇 5, Array = 5 - 7 - 7 - 8 - 6, Suma = 12
+Hilo consumidor saca el valor 6 de la posici髇 5, Array = 5 - 7 - 7 - 8, Suma = 18
+Hilo productor 1 introduce el valor 10 en la posici髇 5, Array = 5 - 7 - 7 - 8 - 10, Suma = 18
+Hilo productor 1 introduce el valor 8 en la posici髇 6, Array = 5 - 7 - 7 - 8 - 10 - 8, Suma = 18
+Hilo productor 2 introduce el valor 7 en la posici髇 7, Array = 5 - 7 - 7 - 8 - 10 - 8 - 7, Suma = 18
+Hilo consumidor saca el valor 7 de la posici髇 7, Array = 5 - 7 - 7 - 8 - 10 - 8, Suma = 25
+Hilo productor 1 introduce el valor 5 en la posici髇 7, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5, Suma = 25
+Hilo productor 2 introduce el valor 5 en la posici髇 8, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5, Suma = 25
+Hilo productor 1 introduce el valor 6 en la posici髇 9, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 6, Suma = 25
+Hilo consumidor saca el valor 6 de la posici髇 9, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5, Suma = 31
+Hilo productor 2 introduce el valor 3 en la posici髇 9, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 31
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 7, Suma = 31
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 38
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 1, Suma = 38
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 39
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 4, Suma = 39
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 43
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 9, Suma = 43
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 52
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 5, Suma = 52
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 57
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 1, Suma = 57
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 58
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 8, Suma = 58
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 66
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 7, Suma = 66
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 73
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 0, Suma = 73
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 73
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 8, Suma = 73
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 81
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 7, Suma = 81
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 88
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 7, Suma = 88
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 95
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 4, Suma = 95
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 99
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3 - 1, Suma = 99
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 100
+Suma m醲ima alcanzada: 100, Array = 5 - 7 - 7 - 8 - 10 - 8 - 5 - 5 - 3, Suma = 100
+Hilo productor 1 introduce el valor 8 en la posici髇 1, Array = 8, Suma = 0
+Hilo productor 2 introduce el valor 8 en la posici髇 2, Array = 8 - 8, Suma = 0
+Hilo consumidor saca el valor 8 de la posici髇 2, Array = 8, Suma = 8
+Hilo productor 1 introduce el valor 5 en la posici髇 2, Array = 8 - 5, Suma = 8
+Hilo productor 2 introduce el valor 2 en la posici髇 3, Array = 8 - 5 - 2, Suma = 8
+Hilo consumidor saca el valor 2 de la posici髇 3, Array = 8 - 5, Suma = 10
+Hilo productor 2 introduce el valor 7 en la posici髇 3, Array = 8 - 5 - 7, Suma = 10
+Hilo productor 1 introduce el valor 4 en la posici髇 4, Array = 8 - 5 - 7 - 4, Suma = 10
+Hilo productor 2 introduce el valor 3 en la posici髇 5, Array = 8 - 5 - 7 - 4 - 3, Suma = 10
+Hilo productor 1 introduce el valor 1 en la posici髇 6, Array = 8 - 5 - 7 - 4 - 3 - 1, Suma = 10
+Hilo consumidor saca el valor 1 de la posici髇 6, Array = 8 - 5 - 7 - 4 - 3, Suma = 11
+Hilo productor 1 introduce el valor 1 en la posici髇 6, Array = 8 - 5 - 7 - 4 - 3 - 1, Suma = 11
+Hilo productor 2 introduce el valor 1 en la posici髇 7, Array = 8 - 5 - 7 - 4 - 3 - 1 - 1, Suma = 11
+Hilo consumidor saca el valor 1 de la posici髇 7, Array = 8 - 5 - 7 - 4 - 3 - 1, Suma = 12
+Hilo productor 2 introduce el valor 10 en la posici髇 7, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10, Suma = 12
+Hilo productor 1 introduce el valor 1 en la posici髇 8, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1, Suma = 12
+Hilo productor 1 introduce el valor 1 en la posici髇 9, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 12
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 8, Suma = 12
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 20
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 7, Suma = 20
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 27
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 0, Suma = 27
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 27
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 8, Suma = 27
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 35
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 4, Suma = 35
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 39
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 4, Suma = 39
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 43
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 7, Suma = 43
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 50
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 1, Suma = 50
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 51
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 8, Suma = 51
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 59
+Hilo productor 1 introduce el valor 10 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 10, Suma = 59
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 69
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 0, Suma = 69
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 69
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 6, Suma = 69
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 75
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 5, Suma = 75
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 80
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 3, Suma = 80
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 83
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 9, Suma = 83
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 92
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 9, Suma = 92
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 101
+Suma m醲ima alcanzada: 101, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1, Suma = 101
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 8 - 5 - 7 - 4 - 3 - 1 - 10 - 1 - 1 - 7, Suma = 101
+Hilo productor 1 introduce el valor 9 en la posici髇 1, Array = 9, Suma = 0
+Hilo consumidor saca el valor 9 de la posici髇 1, Array = , Suma = 9
+Hilo productor 2 introduce el valor 7 en la posici髇 1, Array = 7, Suma = 9
+Hilo productor 1 introduce el valor 8 en la posici髇 2, Array = 7 - 8, Suma = 9
+Hilo productor 2 introduce el valor 7 en la posici髇 3, Array = 7 - 8 - 7, Suma = 9
+Hilo consumidor saca el valor 7 de la posici髇 3, Array = 7 - 8, Suma = 16
+Hilo productor 1 introduce el valor 9 en la posici髇 3, Array = 7 - 8 - 9, Suma = 16
+Hilo productor 2 introduce el valor 1 en la posici髇 4, Array = 7 - 8 - 9 - 1, Suma = 16
+Hilo consumidor saca el valor 1 de la posici髇 4, Array = 7 - 8 - 9, Suma = 17
+Hilo productor 1 introduce el valor 5 en la posici髇 4, Array = 7 - 8 - 9 - 5, Suma = 17
+Hilo productor 2 introduce el valor 2 en la posici髇 5, Array = 7 - 8 - 9 - 5 - 2, Suma = 17
+Hilo productor 1 introduce el valor 10 en la posici髇 6, Array = 7 - 8 - 9 - 5 - 2 - 10, Suma = 17
+Hilo productor 2 introduce el valor 7 en la posici髇 7, Array = 7 - 8 - 9 - 5 - 2 - 10 - 7, Suma = 17
+Hilo consumidor saca el valor 7 de la posici髇 7, Array = 7 - 8 - 9 - 5 - 2 - 10, Suma = 24
+Hilo productor 1 introduce el valor 5 en la posici髇 7, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5, Suma = 24
+Hilo productor 2 introduce el valor 0 en la posici髇 8, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 0, Suma = 24
+Hilo consumidor saca el valor 0 de la posici髇 8, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5, Suma = 24
+Hilo productor 1 introduce el valor 9 en la posici髇 8, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9, Suma = 24
+Hilo productor 2 introduce el valor 7 en la posici髇 9, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 24
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 6, Suma = 24
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 30
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 9, Suma = 30
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 39
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 0, Suma = 39
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 39
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 9, Suma = 39
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 48
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 8, Suma = 48
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 56
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 5, Suma = 56
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 61
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 3, Suma = 61
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 64
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 8, Suma = 64
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 72
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 6, Suma = 72
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 78
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 5, Suma = 78
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 83
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 0, Suma = 83
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 83
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 1, Suma = 83
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 84
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 0, Suma = 84
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 84
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 4, Suma = 84
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 88
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 7, Suma = 88
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 95
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 6, Suma = 95
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 101
+Suma m醲ima alcanzada: 101, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7, Suma = 101
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 7 - 8 - 9 - 5 - 2 - 10 - 5 - 9 - 7 - 1, Suma = 101
+Hilo productor 1 introduce el valor 2 en la posici髇 1, Array = 2, Suma = 0
+Hilo consumidor saca el valor 2 de la posici髇 1, Array = , Suma = 2
+Hilo productor 2 introduce el valor 8 en la posici髇 1, Array = 8, Suma = 2
+Hilo productor 1 introduce el valor 2 en la posici髇 2, Array = 8 - 2, Suma = 2
+Hilo productor 2 introduce el valor 7 en la posici髇 3, Array = 8 - 2 - 7, Suma = 2
+Hilo consumidor saca el valor 7 de la posici髇 3, Array = 8 - 2, Suma = 9
+Hilo productor 1 introduce el valor 10 en la posici髇 3, Array = 8 - 2 - 10, Suma = 9
+Hilo productor 2 introduce el valor 4 en la posici髇 4, Array = 8 - 2 - 10 - 4, Suma = 9
+Hilo productor 2 introduce el valor 6 en la posici髇 5, Array = 8 - 2 - 10 - 4 - 6, Suma = 9
+Hilo consumidor saca el valor 6 de la posici髇 5, Array = 8 - 2 - 10 - 4, Suma = 15
+Hilo productor 1 introduce el valor 10 en la posici髇 5, Array = 8 - 2 - 10 - 4 - 10, Suma = 15
+Hilo productor 2 introduce el valor 1 en la posici髇 6, Array = 8 - 2 - 10 - 4 - 10 - 1, Suma = 15
+Hilo productor 1 introduce el valor 5 en la posici髇 7, Array = 8 - 2 - 10 - 4 - 10 - 1 - 5, Suma = 15
+Hilo consumidor saca el valor 5 de la posici髇 7, Array = 8 - 2 - 10 - 4 - 10 - 1, Suma = 20
+Hilo productor 2 introduce el valor 9 en la posici髇 7, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9, Suma = 20
+Hilo productor 1 introduce el valor 1 en la posici髇 8, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1, Suma = 20
+Hilo productor 2 introduce el valor 0 en la posici髇 9, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 0, Suma = 20
+Hilo consumidor saca el valor 0 de la posici髇 9, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1, Suma = 20
+Hilo productor 1 introduce el valor 4 en la posici髇 9, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 20
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 8, Suma = 20
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 28
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 8, Suma = 28
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 36
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 9, Suma = 36
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 45
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 9, Suma = 45
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 54
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 7, Suma = 54
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 61
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 2, Suma = 61
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 63
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 6, Suma = 63
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 69
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 9, Suma = 69
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 78
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 5, Suma = 78
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 83
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 8, Suma = 83
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 91
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 9, Suma = 91
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 100
+Suma m醲ima alcanzada: 100, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4, Suma = 100
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 8 - 2 - 10 - 4 - 10 - 1 - 9 - 1 - 4 - 4, Suma = 100
+Hilo productor 1 introduce el valor 3 en la posici髇 1, Array = 3, Suma = 0
+Hilo consumidor saca el valor 3 de la posici髇 1, Array = , Suma = 3
+Hilo productor 2 introduce el valor 3 en la posici髇 1, Array = 3, Suma = 3
+Hilo productor 1 introduce el valor 2 en la posici髇 2, Array = 3 - 2, Suma = 3
+Hilo productor 2 introduce el valor 9 en la posici髇 3, Array = 3 - 2 - 9, Suma = 3
+Hilo consumidor saca el valor 9 de la posici髇 3, Array = 3 - 2, Suma = 12
+Hilo productor 1 introduce el valor 9 en la posici髇 3, Array = 3 - 2 - 9, Suma = 12
+Hilo productor 2 introduce el valor 7 en la posici髇 4, Array = 3 - 2 - 9 - 7, Suma = 12
+Hilo consumidor saca el valor 7 de la posici髇 4, Array = 3 - 2 - 9, Suma = 19
+Hilo productor 1 introduce el valor 5 en la posici髇 4, Array = 3 - 2 - 9 - 5, Suma = 19
+Hilo productor 2 introduce el valor 8 en la posici髇 5, Array = 3 - 2 - 9 - 5 - 8, Suma = 19
+Hilo productor 2 introduce el valor 6 en la posici髇 6, Array = 3 - 2 - 9 - 5 - 8 - 6, Suma = 19
+Hilo productor 1 introduce el valor 1 en la posici髇 7, Array = 3 - 2 - 9 - 5 - 8 - 6 - 1, Suma = 19
+Hilo consumidor saca el valor 1 de la posici髇 7, Array = 3 - 2 - 9 - 5 - 8 - 6, Suma = 20
+Hilo productor 2 introduce el valor 2 en la posici髇 7, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2, Suma = 20
+Hilo productor 1 introduce el valor 9 en la posici髇 8, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 9, Suma = 20
+Hilo consumidor saca el valor 9 de la posici髇 8, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2, Suma = 29
+Hilo productor 2 introduce el valor 0 en la posici髇 8, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0, Suma = 29
+Hilo productor 1 introduce el valor 5 en la posici髇 9, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 29
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 8, Suma = 29
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 37
+Hilo productor 1 introduce el valor 10 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 10, Suma = 37
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 47
+Hilo productor 2 introduce el valor 10 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 10, Suma = 47
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 57
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 4, Suma = 57
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 61
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 5, Suma = 61
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 66
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 2, Suma = 66
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 68
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 4, Suma = 68
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 72
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 2, Suma = 72
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 74
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 9, Suma = 74
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 83
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 1, Suma = 83
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 84
+Hilo productor 2 introduce el valor 3 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 3, Suma = 84
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 87
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 1, Suma = 87
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 88
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 0, Suma = 88
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 88
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 4, Suma = 88
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 92
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 0, Suma = 92
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 92
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 4, Suma = 92
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 96
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5 - 5, Suma = 96
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 101
+Suma m醲ima alcanzada: 101, Array = 3 - 2 - 9 - 5 - 8 - 6 - 2 - 0 - 5, Suma = 101
+Hilo productor 1 introduce el valor 6 en la posici髇 1, Array = 6, Suma = 0
+Hilo consumidor saca el valor 6 de la posici髇 1, Array = , Suma = 6
+Hilo productor 2 introduce el valor 1 en la posici髇 1, Array = 1, Suma = 6
+Hilo productor 1 introduce el valor 2 en la posici髇 2, Array = 1 - 2, Suma = 6
+Hilo productor 2 introduce el valor 4 en la posici髇 3, Array = 1 - 2 - 4, Suma = 6
+Hilo consumidor saca el valor 4 de la posici髇 3, Array = 1 - 2, Suma = 10
+Hilo productor 1 introduce el valor 7 en la posici髇 3, Array = 1 - 2 - 7, Suma = 10
+Hilo productor 2 introduce el valor 5 en la posici髇 4, Array = 1 - 2 - 7 - 5, Suma = 10
+Hilo productor 1 introduce el valor 4 en la posici髇 5, Array = 1 - 2 - 7 - 5 - 4, Suma = 10
+Hilo consumidor saca el valor 4 de la posici髇 5, Array = 1 - 2 - 7 - 5, Suma = 14
+Hilo productor 2 introduce el valor 7 en la posici髇 5, Array = 1 - 2 - 7 - 5 - 7, Suma = 14
+Hilo productor 1 introduce el valor 1 en la posici髇 6, Array = 1 - 2 - 7 - 5 - 7 - 1, Suma = 14
+Hilo productor 2 introduce el valor 4 en la posici髇 7, Array = 1 - 2 - 7 - 5 - 7 - 1 - 4, Suma = 14
+Hilo consumidor saca el valor 4 de la posici髇 7, Array = 1 - 2 - 7 - 5 - 7 - 1, Suma = 18
+Hilo productor 1 introduce el valor 3 en la posici髇 7, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3, Suma = 18
+Hilo productor 2 introduce el valor 10 en la posici髇 8, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10, Suma = 18
+Hilo productor 1 introduce el valor 0 en la posici髇 9, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 0, Suma = 18
+Hilo consumidor saca el valor 0 de la posici髇 9, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10, Suma = 18
+Hilo productor 2 introduce el valor 9 en la posici髇 9, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 18
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 0, Suma = 18
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 18
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 4, Suma = 18
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 22
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 4, Suma = 22
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 26
+Hilo productor 2 introduce el valor 10 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 10, Suma = 26
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 36
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 1, Suma = 36
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 37
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 4, Suma = 37
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 41
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 0, Suma = 41
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 41
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 1, Suma = 41
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 42
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 5, Suma = 42
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 47
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 8, Suma = 47
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 55
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 6, Suma = 55
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 61
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 6, Suma = 61
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 67
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 0, Suma = 67
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 67
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 6, Suma = 67
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 73
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 1, Suma = 73
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 74
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 6, Suma = 74
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 80
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 4, Suma = 80
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 84
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 5, Suma = 84
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 89
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 5, Suma = 89
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 94
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9 - 8, Suma = 94
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 102
+Suma m醲ima alcanzada: 102, Array = 1 - 2 - 7 - 5 - 7 - 1 - 3 - 10 - 9, Suma = 102
+Hilo productor 1 introduce el valor 3 en la posici髇 1, Array = 3, Suma = 0
+Hilo consumidor saca el valor 3 de la posici髇 1, Array = , Suma = 3
+Hilo productor 2 introduce el valor 10 en la posici髇 1, Array = 10, Suma = 3
+Hilo productor 1 introduce el valor 5 en la posici髇 2, Array = 10 - 5, Suma = 3
+Hilo productor 2 introduce el valor 2 en la posici髇 3, Array = 10 - 5 - 2, Suma = 3
+Hilo consumidor saca el valor 2 de la posici髇 3, Array = 10 - 5, Suma = 5
+Hilo productor 1 introduce el valor 9 en la posici髇 3, Array = 10 - 5 - 9, Suma = 5
+Hilo productor 2 introduce el valor 1 en la posici髇 4, Array = 10 - 5 - 9 - 1, Suma = 5
+Hilo consumidor saca el valor 1 de la posici髇 4, Array = 10 - 5 - 9, Suma = 6
+Hilo productor 1 introduce el valor 10 en la posici髇 4, Array = 10 - 5 - 9 - 10, Suma = 6
+Hilo productor 2 introduce el valor 6 en la posici髇 5, Array = 10 - 5 - 9 - 10 - 6, Suma = 6
+Hilo productor 1 introduce el valor 9 en la posici髇 6, Array = 10 - 5 - 9 - 10 - 6 - 9, Suma = 6
+Hilo productor 2 introduce el valor 4 en la posici髇 7, Array = 10 - 5 - 9 - 10 - 6 - 9 - 4, Suma = 6
+Hilo consumidor saca el valor 4 de la posici髇 7, Array = 10 - 5 - 9 - 10 - 6 - 9, Suma = 10
+Hilo productor 1 introduce el valor 2 en la posici髇 7, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2, Suma = 10
+Hilo productor 2 introduce el valor 6 en la posici髇 8, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 6, Suma = 10
+Hilo consumidor saca el valor 6 de la posici髇 8, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2, Suma = 16
+Hilo productor 1 introduce el valor 9 en la posici髇 8, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9, Suma = 16
+Hilo productor 2 introduce el valor 0 en la posici髇 9, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 16
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 7, Suma = 16
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 23
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 2, Suma = 23
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 25
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 7, Suma = 25
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 32
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 8, Suma = 32
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 40
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 4, Suma = 40
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 44
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 6, Suma = 44
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 50
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 3, Suma = 50
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 53
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 5, Suma = 53
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 58
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 9, Suma = 58
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 67
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 2, Suma = 67
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 69
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 1, Suma = 69
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 70
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 8, Suma = 70
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 78
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 1, Suma = 78
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 79
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 2, Suma = 79
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 81
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 1, Suma = 81
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 82
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 4, Suma = 82
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 86
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 8, Suma = 86
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 94
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0 - 9, Suma = 94
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 103
+Suma m醲ima alcanzada: 103, Array = 10 - 5 - 9 - 10 - 6 - 9 - 2 - 9 - 0, Suma = 103
+Hilo productor 1 introduce el valor 7 en la posici髇 1, Array = 7, Suma = 0
+Hilo consumidor saca el valor 7 de la posici髇 1, Array = , Suma = 7
+Hilo productor 2 introduce el valor 10 en la posici髇 1, Array = 10, Suma = 7
+Hilo productor 1 introduce el valor 1 en la posici髇 2, Array = 10 - 1, Suma = 7
+Hilo productor 2 introduce el valor 10 en la posici髇 3, Array = 10 - 1 - 10, Suma = 7
+Hilo consumidor saca el valor 10 de la posici髇 3, Array = 10 - 1, Suma = 17
+Hilo productor 1 introduce el valor 8 en la posici髇 3, Array = 10 - 1 - 8, Suma = 17
+Hilo productor 2 introduce el valor 3 en la posici髇 4, Array = 10 - 1 - 8 - 3, Suma = 17
+Hilo consumidor saca el valor 3 de la posici髇 4, Array = 10 - 1 - 8, Suma = 20
+Hilo productor 2 introduce el valor 8 en la posici髇 4, Array = 10 - 1 - 8 - 8, Suma = 20
+Hilo productor 1 introduce el valor 0 en la posici髇 5, Array = 10 - 1 - 8 - 8 - 0, Suma = 20
+Hilo productor 2 introduce el valor 1 en la posici髇 6, Array = 10 - 1 - 8 - 8 - 0 - 1, Suma = 20
+Hilo productor 1 introduce el valor 3 en la posici髇 7, Array = 10 - 1 - 8 - 8 - 0 - 1 - 3, Suma = 20
+Hilo consumidor saca el valor 3 de la posici髇 7, Array = 10 - 1 - 8 - 8 - 0 - 1, Suma = 23
+Hilo productor 2 introduce el valor 10 en la posici髇 7, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10, Suma = 23
+Hilo productor 1 introduce el valor 2 en la posici髇 8, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 2, Suma = 23
+Hilo consumidor saca el valor 2 de la posici髇 8, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10, Suma = 25
+Hilo productor 1 introduce el valor 5 en la posici髇 8, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5, Suma = 25
+Hilo productor 2 introduce el valor 0 en la posici髇 9, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 25
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 2, Suma = 25
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 27
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 3, Suma = 27
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 30
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 8, Suma = 30
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 38
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 9, Suma = 38
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 47
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 6, Suma = 47
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 53
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 3, Suma = 53
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 56
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 2, Suma = 56
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 58
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 2, Suma = 58
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 60
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 0, Suma = 60
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 60
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 4, Suma = 60
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 64
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 1, Suma = 64
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 65
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 2, Suma = 65
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 67
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 1, Suma = 67
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 68
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 1, Suma = 68
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 69
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 7, Suma = 69
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 76
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 3, Suma = 76
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 79
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 5, Suma = 79
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 84
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 9, Suma = 84
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 93
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 1, Suma = 93
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 94
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 5, Suma = 94
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 99
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 0, Suma = 99
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 99
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 0, Suma = 99
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 99
+Hilo productor 2 introduce el valor 3 en la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0 - 3, Suma = 99
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 102
+Suma m醲ima alcanzada: 102, Array = 10 - 1 - 8 - 8 - 0 - 1 - 10 - 5 - 0, Suma = 102
+Hilo productor 1 introduce el valor 2 en la posici髇 1, Array = 2, Suma = 0
+Hilo consumidor saca el valor 2 de la posici髇 1, Array = , Suma = 2
+Hilo productor 2 introduce el valor 10 en la posici髇 1, Array = 10, Suma = 2
+Hilo productor 1 introduce el valor 5 en la posici髇 2, Array = 10 - 5, Suma = 2
+Hilo productor 2 introduce el valor 7 en la posici髇 3, Array = 10 - 5 - 7, Suma = 2
+Hilo consumidor saca el valor 7 de la posici髇 3, Array = 10 - 5, Suma = 9
+Hilo productor 1 introduce el valor 0 en la posici髇 3, Array = 10 - 5 - 0, Suma = 9
+Hilo productor 2 introduce el valor 5 en la posici髇 4, Array = 10 - 5 - 0 - 5, Suma = 9
+Hilo productor 1 introduce el valor 4 en la posici髇 5, Array = 10 - 5 - 0 - 5 - 4, Suma = 9
+Hilo productor 2 introduce el valor 5 en la posici髇 6, Array = 10 - 5 - 0 - 5 - 4 - 5, Suma = 9
+Hilo consumidor saca el valor 5 de la posici髇 6, Array = 10 - 5 - 0 - 5 - 4, Suma = 14
+Hilo productor 1 introduce el valor 2 en la posici髇 6, Array = 10 - 5 - 0 - 5 - 4 - 2, Suma = 14
+Hilo productor 2 introduce el valor 2 en la posici髇 7, Array = 10 - 5 - 0 - 5 - 4 - 2 - 2, Suma = 14
+Hilo consumidor saca el valor 2 de la posici髇 7, Array = 10 - 5 - 0 - 5 - 4 - 2, Suma = 16
+Hilo productor 2 introduce el valor 0 en la posici髇 7, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0, Suma = 16
+Hilo productor 1 introduce el valor 0 en la posici髇 8, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 0, Suma = 16
+Hilo consumidor saca el valor 0 de la posici髇 8, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0, Suma = 16
+Hilo productor 2 introduce el valor 1 en la posici髇 8, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1, Suma = 16
+Hilo productor 1 introduce el valor 4 en la posici髇 9, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 16
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 5, Suma = 16
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 21
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 4, Suma = 21
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 25
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 8, Suma = 25
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 33
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 9, Suma = 33
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 42
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 0, Suma = 42
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 42
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 3, Suma = 42
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 45
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 7, Suma = 45
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 52
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 5, Suma = 52
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 57
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 2, Suma = 57
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 59
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 1, Suma = 59
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 60
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 7, Suma = 60
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 67
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 3, Suma = 67
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 70
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 5, Suma = 70
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 75
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 0, Suma = 75
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 75
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 2, Suma = 75
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 77
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 6, Suma = 77
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 83
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 9, Suma = 83
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 92
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 6, Suma = 92
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 98
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4 - 7, Suma = 98
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 105
+Suma m醲ima alcanzada: 105, Array = 10 - 5 - 0 - 5 - 4 - 2 - 0 - 1 - 4, Suma = 105
+Hilo productor 1 introduce el valor 7 en la posici髇 1, Array = 7, Suma = 0
+Hilo consumidor saca el valor 7 de la posici髇 1, Array = , Suma = 7
+Hilo productor 2 introduce el valor 2 en la posici髇 1, Array = 2, Suma = 7
+Hilo productor 1 introduce el valor 6 en la posici髇 2, Array = 2 - 6, Suma = 7
+Hilo productor 2 introduce el valor 3 en la posici髇 3, Array = 2 - 6 - 3, Suma = 7
+Hilo consumidor saca el valor 3 de la posici髇 3, Array = 2 - 6, Suma = 10
+Hilo productor 1 introduce el valor 0 en la posici髇 3, Array = 2 - 6 - 0, Suma = 10
+Hilo productor 2 introduce el valor 10 en la posici髇 4, Array = 2 - 6 - 0 - 10, Suma = 10
+Hilo productor 2 introduce el valor 10 en la posici髇 5, Array = 2 - 6 - 0 - 10 - 10, Suma = 10
+Hilo consumidor saca el valor 10 de la posici髇 5, Array = 2 - 6 - 0 - 10, Suma = 20
+Hilo productor 1 introduce el valor 8 en la posici髇 5, Array = 2 - 6 - 0 - 10 - 8, Suma = 20
+Hilo productor 2 introduce el valor 9 en la posici髇 6, Array = 2 - 6 - 0 - 10 - 8 - 9, Suma = 20
+Hilo productor 1 introduce el valor 5 en la posici髇 7, Array = 2 - 6 - 0 - 10 - 8 - 9 - 5, Suma = 20
+Hilo consumidor saca el valor 5 de la posici髇 7, Array = 2 - 6 - 0 - 10 - 8 - 9, Suma = 25
+Hilo productor 2 introduce el valor 4 en la posici髇 7, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4, Suma = 25
+Hilo productor 1 introduce el valor 3 en la posici髇 8, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 3, Suma = 25
+Hilo consumidor saca el valor 3 de la posici髇 8, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4, Suma = 28
+Hilo productor 2 introduce el valor 0 en la posici髇 8, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0, Suma = 28
+Hilo productor 1 introduce el valor 8 en la posici髇 9, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 28
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 6, Suma = 28
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 34
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 9, Suma = 34
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 43
+Hilo productor 2 introduce el valor 10 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 10, Suma = 43
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 53
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 8, Suma = 53
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 61
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 8, Suma = 61
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 69
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 5, Suma = 69
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 74
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 4, Suma = 74
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 78
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 0, Suma = 78
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 78
+Hilo productor 2 introduce el valor 3 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 3, Suma = 78
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 81
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 2, Suma = 81
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 83
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 1, Suma = 83
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 84
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 0, Suma = 84
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 84
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 9, Suma = 84
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 93
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8 - 7, Suma = 93
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 100
+Suma m醲ima alcanzada: 100, Array = 2 - 6 - 0 - 10 - 8 - 9 - 4 - 0 - 8, Suma = 100
+Hilo productor 1 introduce el valor 8 en la posici髇 1, Array = 8, Suma = 0
+Hilo consumidor saca el valor 8 de la posici髇 1, Array = , Suma = 8
+Hilo productor 2 introduce el valor 3 en la posici髇 1, Array = 3, Suma = 8
+Hilo productor 1 introduce el valor 2 en la posici髇 2, Array = 3 - 2, Suma = 8
+Hilo productor 2 introduce el valor 2 en la posici髇 3, Array = 3 - 2 - 2, Suma = 8
+Hilo consumidor saca el valor 2 de la posici髇 3, Array = 3 - 2, Suma = 10
+Hilo productor 1 introduce el valor 0 en la posici髇 3, Array = 3 - 2 - 0, Suma = 10
+Hilo productor 2 introduce el valor 3 en la posici髇 4, Array = 3 - 2 - 0 - 3, Suma = 10
+Hilo consumidor saca el valor 3 de la posici髇 4, Array = 3 - 2 - 0, Suma = 13
+Hilo productor 1 introduce el valor 6 en la posici髇 4, Array = 3 - 2 - 0 - 6, Suma = 13
+Hilo productor 2 introduce el valor 3 en la posici髇 5, Array = 3 - 2 - 0 - 6 - 3, Suma = 13
+Hilo productor 2 introduce el valor 1 en la posici髇 6, Array = 3 - 2 - 0 - 6 - 3 - 1, Suma = 13
+Hilo productor 1 introduce el valor 0 en la posici髇 7, Array = 3 - 2 - 0 - 6 - 3 - 1 - 0, Suma = 13
+Hilo consumidor saca el valor 0 de la posici髇 7, Array = 3 - 2 - 0 - 6 - 3 - 1, Suma = 13
+Hilo productor 2 introduce el valor 7 en la posici髇 7, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7, Suma = 13
+Hilo productor 1 introduce el valor 2 en la posici髇 8, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 2, Suma = 13
+Hilo consumidor saca el valor 2 de la posici髇 8, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7, Suma = 15
+Hilo productor 2 introduce el valor 4 en la posici髇 8, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4, Suma = 15
+Hilo productor 1 introduce el valor 2 en la posici髇 9, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 15
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 9, Suma = 15
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 24
+Hilo productor 1 introduce el valor 10 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 10, Suma = 24
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 34
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 1, Suma = 34
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 35
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 2, Suma = 35
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 37
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 6, Suma = 37
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 43
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 6, Suma = 43
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 49
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 6, Suma = 49
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 55
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 6, Suma = 55
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 61
+Hilo productor 2 introduce el valor 3 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 3, Suma = 61
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 64
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 2, Suma = 64
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 66
+Hilo productor 2 introduce el valor 3 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 3, Suma = 66
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 69
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 4, Suma = 69
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 73
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 8, Suma = 73
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 81
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 6, Suma = 81
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 87
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 0, Suma = 87
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 87
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 5, Suma = 87
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 92
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 6, Suma = 92
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 98
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 9, Suma = 98
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 107
+Suma m醲ima alcanzada: 107, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2, Suma = 107
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 3 - 2 - 0 - 6 - 3 - 1 - 7 - 4 - 2 - 1, Suma = 107
+Hilo productor 1 introduce el valor 8 en la posici髇 1, Array = 8, Suma = 0
+Hilo consumidor saca el valor 8 de la posici髇 1, Array = , Suma = 8
+Hilo productor 2 introduce el valor 0 en la posici髇 1, Array = 0, Suma = 8
+Hilo productor 1 introduce el valor 4 en la posici髇 2, Array = 0 - 4, Suma = 8
+Hilo productor 2 introduce el valor 3 en la posici髇 3, Array = 0 - 4 - 3, Suma = 8
+Hilo consumidor saca el valor 3 de la posici髇 3, Array = 0 - 4, Suma = 11
+Hilo productor 2 introduce el valor 4 en la posici髇 3, Array = 0 - 4 - 4, Suma = 11
+Hilo productor 1 introduce el valor 7 en la posici髇 4, Array = 0 - 4 - 4 - 7, Suma = 11
+Hilo consumidor saca el valor 7 de la posici髇 4, Array = 0 - 4 - 4, Suma = 18
+Hilo productor 1 introduce el valor 7 en la posici髇 4, Array = 0 - 4 - 4 - 7, Suma = 18
+Hilo productor 2 introduce el valor 2 en la posici髇 5, Array = 0 - 4 - 4 - 7 - 2, Suma = 18
+Hilo productor 1 introduce el valor 1 en la posici髇 6, Array = 0 - 4 - 4 - 7 - 2 - 1, Suma = 18
+Hilo productor 2 introduce el valor 3 en la posici髇 7, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3, Suma = 18
+Hilo consumidor saca el valor 3 de la posici髇 7, Array = 0 - 4 - 4 - 7 - 2 - 1, Suma = 21
+Hilo productor 2 introduce el valor 3 en la posici髇 7, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3, Suma = 21
+Hilo productor 1 introduce el valor 0 en la posici髇 8, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0, Suma = 21
+Hilo productor 1 introduce el valor 1 en la posici髇 9, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 21
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 7, Suma = 21
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 28
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 9, Suma = 28
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 37
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 2, Suma = 37
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 39
+Hilo productor 2 introduce el valor 10 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 10, Suma = 39
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 49
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 0, Suma = 49
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 49
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 8, Suma = 49
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 57
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 1, Suma = 57
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 58
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 5, Suma = 58
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 63
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 6, Suma = 63
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 69
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 0, Suma = 69
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 69
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 8, Suma = 69
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 77
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 5, Suma = 77
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 82
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 1, Suma = 82
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 83
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 7, Suma = 83
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 90
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 9, Suma = 90
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 99
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1 - 8, Suma = 99
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 107
+Suma m醲ima alcanzada: 107, Array = 0 - 4 - 4 - 7 - 2 - 1 - 3 - 0 - 1, Suma = 107
+Hilo productor 1 introduce el valor 2 en la posici髇 1, Array = 2, Suma = 0
+Hilo consumidor saca el valor 2 de la posici髇 1, Array = , Suma = 2
+Hilo productor 2 introduce el valor 8 en la posici髇 1, Array = 8, Suma = 2
+Hilo productor 1 introduce el valor 4 en la posici髇 2, Array = 8 - 4, Suma = 2
+Hilo productor 2 introduce el valor 9 en la posici髇 3, Array = 8 - 4 - 9, Suma = 2
+Hilo consumidor saca el valor 9 de la posici髇 3, Array = 8 - 4, Suma = 11
+Hilo productor 1 introduce el valor 6 en la posici髇 3, Array = 8 - 4 - 6, Suma = 11
+Hilo productor 2 introduce el valor 0 en la posici髇 4, Array = 8 - 4 - 6 - 0, Suma = 11
+Hilo consumidor saca el valor 0 de la posici髇 4, Array = 8 - 4 - 6, Suma = 11
+Hilo productor 1 introduce el valor 5 en la posici髇 4, Array = 8 - 4 - 6 - 5, Suma = 11
+Hilo productor 2 introduce el valor 6 en la posici髇 5, Array = 8 - 4 - 6 - 5 - 6, Suma = 11
+Hilo productor 1 introduce el valor 3 en la posici髇 6, Array = 8 - 4 - 6 - 5 - 6 - 3, Suma = 11
+Hilo productor 2 introduce el valor 9 en la posici髇 7, Array = 8 - 4 - 6 - 5 - 6 - 3 - 9, Suma = 11
+Hilo consumidor saca el valor 9 de la posici髇 7, Array = 8 - 4 - 6 - 5 - 6 - 3, Suma = 20
+Hilo productor 1 introduce el valor 1 en la posici髇 7, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1, Suma = 20
+Hilo productor 2 introduce el valor 9 en la posici髇 8, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 9, Suma = 20
+Hilo consumidor saca el valor 9 de la posici髇 8, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1, Suma = 29
+Hilo productor 1 introduce el valor 3 en la posici髇 8, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3, Suma = 29
+Hilo productor 2 introduce el valor 6 en la posici髇 9, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 29
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 7, Suma = 29
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 36
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 5, Suma = 36
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 41
+Hilo productor 1 introduce el valor 1 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 1, Suma = 41
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 42
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 5, Suma = 42
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 47
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 3, Suma = 47
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 50
+Hilo productor 2 introduce el valor 3 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 3, Suma = 50
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 53
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 2, Suma = 53
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 55
+Hilo productor 2 introduce el valor 7 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 7, Suma = 55
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 62
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 5, Suma = 62
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 67
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 5, Suma = 67
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 72
+Hilo productor 1 introduce el valor 2 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 2, Suma = 72
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 74
+Hilo productor 2 introduce el valor 5 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 5, Suma = 74
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 79
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 5, Suma = 79
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 84
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 9, Suma = 84
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 93
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 5, Suma = 93
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 98
+Hilo productor 2 introduce el valor 2 en la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6 - 2, Suma = 98
+Hilo consumidor saca el valor 2 de la posici髇 10, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 100
+Suma m醲ima alcanzada: 100, Array = 8 - 4 - 6 - 5 - 6 - 3 - 1 - 3 - 6, Suma = 100
+Hilo productor 1 introduce el valor 0 en la posici髇 1, Array = 0, Suma = 0
+Hilo consumidor saca el valor 0 de la posici髇 1, Array = , Suma = 0
+Hilo productor 2 introduce el valor 7 en la posici髇 1, Array = 7, Suma = 0
+Hilo productor 1 introduce el valor 7 en la posici髇 2, Array = 7 - 7, Suma = 0
+Hilo productor 2 introduce el valor 3 en la posici髇 3, Array = 7 - 7 - 3, Suma = 0
+Hilo consumidor saca el valor 3 de la posici髇 3, Array = 7 - 7, Suma = 3
+Hilo productor 1 introduce el valor 4 en la posici髇 3, Array = 7 - 7 - 4, Suma = 3
+Hilo productor 2 introduce el valor 3 en la posici髇 4, Array = 7 - 7 - 4 - 3, Suma = 3
+Hilo productor 1 introduce el valor 4 en la posici髇 5, Array = 7 - 7 - 4 - 3 - 4, Suma = 3
+Hilo consumidor saca el valor 4 de la posici髇 5, Array = 7 - 7 - 4 - 3, Suma = 7
+Hilo productor 2 introduce el valor 4 en la posici髇 5, Array = 7 - 7 - 4 - 3 - 4, Suma = 7
+Hilo productor 1 introduce el valor 0 en la posici髇 6, Array = 7 - 7 - 4 - 3 - 4 - 0, Suma = 7
+Hilo productor 2 introduce el valor 4 en la posici髇 7, Array = 7 - 7 - 4 - 3 - 4 - 0 - 4, Suma = 7
+Hilo consumidor saca el valor 4 de la posici髇 7, Array = 7 - 7 - 4 - 3 - 4 - 0, Suma = 11
+Hilo productor 1 introduce el valor 9 en la posici髇 7, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9, Suma = 11
+Hilo productor 2 introduce el valor 3 en la posici髇 8, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 3, Suma = 11
+Hilo consumidor saca el valor 3 de la posici髇 8, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9, Suma = 14
+Hilo productor 1 introduce el valor 2 en la posici髇 8, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2, Suma = 14
+Hilo productor 2 introduce el valor 4 en la posici髇 9, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 14
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 9, Suma = 14
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 23
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 1, Suma = 23
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 24
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 0, Suma = 24
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 24
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 4, Suma = 24
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 28
+Hilo productor 1 introduce el valor 3 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 3, Suma = 28
+Hilo consumidor saca el valor 3 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 31
+Hilo productor 2 introduce el valor 0 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 0, Suma = 31
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 31
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 5, Suma = 31
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 36
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 9, Suma = 36
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 45
+Hilo productor 1 introduce el valor 7 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 7, Suma = 45
+Hilo consumidor saca el valor 7 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 52
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 9, Suma = 52
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 61
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 5, Suma = 61
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 66
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 9, Suma = 66
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 75
+Hilo productor 1 introduce el valor 4 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 4, Suma = 75
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 79
+Hilo productor 2 introduce el valor 10 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 10, Suma = 79
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 89
+Hilo productor 1 introduce el valor 6 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 6, Suma = 89
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 95
+Hilo productor 2 introduce el valor 4 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 4, Suma = 95
+Hilo consumidor saca el valor 4 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 99
+Hilo productor 1 introduce el valor 5 en la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4 - 5, Suma = 99
+Hilo consumidor saca el valor 5 de la posici髇 10, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 104
+Suma m醲ima alcanzada: 104, Array = 7 - 7 - 4 - 3 - 4 - 0 - 9 - 2 - 4, Suma = 104
+Hilo productor 1 introduce el valor 3 en la posici髇 1, Array = 3, Suma = 0
+Hilo consumidor saca el valor 3 de la posici髇 1, Array = , Suma = 3
+Hilo productor 2 introduce el valor 4 en la posici髇 1, Array = 4, Suma = 3
+Hilo productor 1 introduce el valor 7 en la posici髇 2, Array = 4 - 7, Suma = 3
+Hilo productor 2 introduce el valor 0 en la posici髇 3, Array = 4 - 7 - 0, Suma = 3
+Hilo consumidor saca el valor 0 de la posici髇 3, Array = 4 - 7, Suma = 3
+Hilo productor 2 introduce el valor 9 en la posici髇 3, Array = 4 - 7 - 9, Suma = 3
+Hilo productor 1 introduce el valor 4 en la posici髇 4, Array = 4 - 7 - 9 - 4, Suma = 3
+Hilo consumidor saca el valor 4 de la posici髇 4, Array = 4 - 7 - 9, Suma = 7
+Hilo productor 1 introduce el valor 6 en la posici髇 4, Array = 4 - 7 - 9 - 6, Suma = 7
+Hilo productor 2 introduce el valor 9 en la posici髇 5, Array = 4 - 7 - 9 - 6 - 9, Suma = 7
+Hilo productor 1 introduce el valor 8 en la posici髇 6, Array = 4 - 7 - 9 - 6 - 9 - 8, Suma = 7
+Hilo productor 2 introduce el valor 2 en la posici髇 7, Array = 4 - 7 - 9 - 6 - 9 - 8 - 2, Suma = 7
+Hilo consumidor saca el valor 2 de la posici髇 7, Array = 4 - 7 - 9 - 6 - 9 - 8, Suma = 9
+Hilo productor 1 introduce el valor 8 en la posici髇 7, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8, Suma = 9
+Hilo productor 2 introduce el valor 0 en la posici髇 8, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 0, Suma = 9
+Hilo consumidor saca el valor 0 de la posici髇 8, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8, Suma = 9
+Hilo productor 1 introduce el valor 2 en la posici髇 8, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2, Suma = 9
+Hilo productor 2 introduce el valor 6 en la posici髇 9, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 9
+Hilo productor 1 introduce el valor 10 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 10, Suma = 9
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 19
+Hilo productor 2 introduce el valor 9 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 9, Suma = 19
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 28
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 8, Suma = 28
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 36
+Hilo productor 2 introduce el valor 10 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 10, Suma = 36
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 46
+Hilo productor 1 introduce el valor 0 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 0, Suma = 46
+Hilo consumidor saca el valor 0 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 46
+Hilo productor 2 introduce el valor 8 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 8, Suma = 46
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 54
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 9, Suma = 54
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 63
+Hilo productor 2 introduce el valor 10 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 10, Suma = 63
+Hilo consumidor saca el valor 10 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 73
+Hilo productor 1 introduce el valor 8 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 8, Suma = 73
+Hilo consumidor saca el valor 8 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 81
+Hilo productor 2 introduce el valor 1 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 1, Suma = 81
+Hilo consumidor saca el valor 1 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 82
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 9, Suma = 82
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 91
+Hilo productor 2 introduce el valor 6 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 6, Suma = 91
+Hilo consumidor saca el valor 6 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 97
+Hilo productor 1 introduce el valor 9 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 9, Suma = 97
+Hilo consumidor saca el valor 9 de la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 106
+Suma m醲ima alcanzada: 106, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6, Suma = 106
+Hilo productor 2 introduce el valor 3 en la posici髇 10, Array = 4 - 7 - 9 - 6 - 9 - 8 - 8 - 2 - 6 - 3, Suma = 106
