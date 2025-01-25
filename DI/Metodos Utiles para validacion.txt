@@ -1,0 +1,17 @@
+Métodos de la clase Character: Estos son útiles para validar caracteres individuales:
+
+Character.isAlphabetic(int codePoint): Comprueba si un carácter es una letra alfabética.
+Character.isDigit(char ch): Comprueba si un carácter es un dígito.
+Character.isLetter(char ch): Comprueba si un carácter es una letra.
+Character.isWhitespace(char ch): Comprueba si un carácter es un espacio en blanco.
+Character.isUpperCase(char ch): Comprueba si un carácter está en mayúsculas.
+Character.isLowerCase(char ch): Comprueba si un carácter está en minúsculas.
+
+Métodos de la clase String: Puedes usar estos métodos para trabajar con cadenas completas:
+
+String.isEmpty(): Comprueba si la cadena está vacía ("").
+String.trim(): Elimina los espacios en blanco iniciales y finales de una cadena.
+String.matches(String regex): Comprueba si una cadena cumple con una expresión regular.
+String.contains(CharSequence s): Comprueba si la cadena contiene una subcadena.
+String.startsWith(String prefix): Comprueba si la cadena comienza con un prefijo específico.
+String.endsWith(String suffix): Comprueba si la cadena termina con un sufijo específico.
