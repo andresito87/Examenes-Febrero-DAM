@@ -1,0 +1,24 @@
+Jugador 6: no acertó el número.
+Jugador 7: no acertó el número.
+Jugador 15: 4 intentos.
+Jugador 18: 7 intentos.
+Jugador 21: 4 intentos.
+Jugador 24: 2 intentos.
+Jugador 31: 6 intentos.
+Jugador 32: 8 intentos.
+Jugador 41: 7 intentos.
+Jugador 40: 7 intentos.
+Jugador 43: 6 intentos.
+Jugador 52: 5 intentos.
+Jugador 51: 9 intentos.
+Jugador 55: 10 intentos.
+Jugador 54: 8 intentos.
+Jugador 57: 7 intentos.
+Jugador 56: 7 intentos.
+Jugador 61: no acertó el número.
+Jugador 65: 4 intentos.
+Jugador 68: 8 intentos.
+Jugador 67: 6 intentos.
+Jugador 75: 6 intentos.
+Jugador 77: 6 intentos.
+Jugador 42: 5 intentos.
