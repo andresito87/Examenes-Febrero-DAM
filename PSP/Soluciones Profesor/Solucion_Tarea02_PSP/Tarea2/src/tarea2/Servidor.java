@@ -8,16 +8,10 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Random;
 
-
-/**
- *
- * @author 
- */
 public class Servidor extends Thread {
-    
-    private static int jugadores=1;
+
+    private static int jugadores = 1;
 
     public static void main(String[] args) {
         try {
@@ -44,75 +38,71 @@ public class Servidor extends Thread {
             while (true) { // Permitir múltiples clientes
                 Socket socket = ss.accept();
                 System.out.println("Cliente se ha conectado...");
-                
+
                 // Manejo de cada cliente que llega al servidor
-                new Thread(new HiloServidor(socket, jugadores++ )).start();
+                new Thread(new HiloServidor(socket, jugadores++)).start();
 
             }
         } catch (IOException e) {
             System.err.println("Error en el servidor: " + e.getMessage());
         }
     }
-
-
 }
 
-
 class HiloServidor implements Runnable {
-        private final Socket socket;
-        private final int numJugador;
-        private Object candado1 = new Object();
-        private Object candado2 = new Object();
-        private Object candado3 = new Object();
 
+    private final Socket socket;
+    private final int numJugador;
+    private Object candado1 = new Object();
+    private Object candado2 = new Object();
+    private Object candado3 = new Object();
 
-        public HiloServidor(Socket socket, int numJugador) {
-            this.socket = socket;
-            this.numJugador = numJugador;
-        }
+    public HiloServidor(Socket socket, int numJugador) {
+        this.socket = socket;
+        this.numJugador = numJugador;
+    }
 
-        @Override
-        public void run() {
-            try {
-                // Lectura de datos
-                BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-                PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
+    @Override
+    public void run() {
+        try {
+            // Lectura de datos
+            BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
 
-                //Se envia el numero de jugador al cliente
-                pw.println(numJugador);
-                //Se recibe el juego del cliente (jugador) que ha iniciado el hilo.
-                String juego = br.readLine();
+            //Se envia el numero de jugador al cliente
+            pw.println(numJugador);
+            //Se recibe el juego del cliente (jugador) que ha iniciado el hilo.
+            String juego = br.readLine();
 
-                //Gestión de entrada en los juegos en base a lo recibido por el cliente (jugador).
-                switch (juego) {
-                    case "1" -> {
-                        String texto = adivinarNumero(socket, "Jugador "+String.valueOf(numJugador));
-                        ficheroJuego1(texto);
-                    }
-                    case "2" -> {
-                        String texto = lanzarDados(socket, "Jugador "+String.valueOf(numJugador));
-                        ficheroJuego2(texto);
-                    }
-                    case "3" -> {
-                        String texto = piedraPapelTijeras(socket, "Jugador "+String.valueOf(numJugador));
-                        ficheroJuego3(texto);
-                    }
+            //Gestión de entrada en los juegos en base a lo recibido por el cliente (jugador).
+            switch (juego) {
+                case "1" -> {
+                    String texto = adivinarNumero(socket, "Jugador " + String.valueOf(numJugador));
+                    ficheroJuego1(texto);
                 }
-
-            } catch (IOException e) {
-                System.err.println("Error al manejar el cliente: " + e.getMessage());
-            } finally {
-                try {
-                    socket.close();
-                    System.out.println("Cliente desconectado.");
-                } catch (IOException e) {
-                    System.err.println("Error al cerrar el socket: " + e.getMessage());
+                case "2" -> {
+                    String texto = lanzarDados(socket, "Jugador " + String.valueOf(numJugador));
+                    ficheroJuego2(texto);
+                }
+                case "3" -> {
+                    String texto = piedraPapelTijeras(socket, "Jugador " + String.valueOf(numJugador));
+                    ficheroJuego3(texto);
                 }
             }
-            
+
+        } catch (IOException e) {
+            System.err.println("Error al manejar el cliente: " + e.getMessage());
+        } finally {
+            try {
+                socket.close();
+                System.out.println("Cliente desconectado.");
+            } catch (IOException e) {
+                System.err.println("Error al cerrar el socket: " + e.getMessage());
+            }
         }
-        
-    
+
+    }
+
     /**
      * Juego en el que se adivina en un máximo de 10 intentos un número
      *
@@ -140,7 +130,7 @@ class HiloServidor implements Runnable {
         int numeroAleatorio = (int) (Math.random() * 100 + 1);
         pw.println("Comenzamos!");
 
-        while (!numeroAcertado && intentos < 10 && (linea = br.readLine()) != null ) {
+        while (!numeroAcertado && intentos < 10 && (linea = br.readLine()) != null) {
 
             intentos++;
             int numeroRecibido = Integer.parseInt(linea);
@@ -159,19 +149,17 @@ class HiloServidor implements Runnable {
         //Gestión de información final con el resultado de cada jugador.
         if (numeroAcertado) {
             resultado = nombre + ": " + intentos + " intentos.";
-        }else{
+        } else {
             pw.println("perdido");
             resultado = nombre + ": " + "no acertó el número.";
         }
-        
-        pw.println(resultado);
 
+        pw.println(resultado);
 
         //Resultado para mandar al método de gestión de archivos correspondiente
         return resultado;
     }
 
-    
     /**
      * Juego donde se lanzan dados durante 5 rondas hasta encontrar un ganador
      * (si se saca el mismo números e repite la ronda)
@@ -195,7 +183,7 @@ class HiloServidor implements Runnable {
 
         pw.println("Comenzamos!");
 
-        while (contadorPartida < 5 && (linea = br.readLine()) != null ) {
+        while (contadorPartida < 5 && (linea = br.readLine()) != null) {
 
             //Simulación de dados de juego
             int dadoServidor = (int) (Math.random() * 6 + 1);
@@ -213,12 +201,12 @@ class HiloServidor implements Runnable {
 
             if (contadorPartida == 5) {
                 pw.println("fin");
-            }else{
+            } else {
                 pw.println("Tira!");
             }
 
         }
-        
+
         //Gestión de información final con el resultado de cada jugador.
         if (puntosCliente > puntosServidor) {
             resultado = nombre + ": Gana " + puntosCliente + "-" + puntosServidor + " contra el servidor";
@@ -230,8 +218,6 @@ class HiloServidor implements Runnable {
         //Resultado para mandar al método de gestión de archivos correspondiente
         return resultado;
     }
-
-    
 
     /**
      * Juego de piedra, papel y tijeras durante 5 rondas hasta encontrar un
@@ -256,12 +242,11 @@ class HiloServidor implements Runnable {
 
         pw.println("Comenzamos!");
 
-        while (contadorPartida < 5 && (linea = br.readLine()) != null ) {
+        while (contadorPartida < 5 && (linea = br.readLine()) != null) {
 
             //Se recibe el tipo de mano gestionado en un método (selectorMano)
-            String manoServidor = selectorMano((int)(Math.random() * 3 + 1));
+            String manoServidor = selectorMano((int) (Math.random() * 3 + 1));
             String manoCliente = selectorMano(Integer.parseInt(linea));
-
 
             //Comprobaciones de cada una de las rondas
             if (manoServidor.equals("Piedra") && manoCliente.equals("Papel")
@@ -281,11 +266,11 @@ class HiloServidor implements Runnable {
 
             if (contadorPartida == 5) {
                 pw.println("fin");
-            }else{
+            } else {
                 pw.println("3,2,1... ya");
             }
-    
-        }        
+
+        }
         //Gestión de información final con el resultado de cada jugador.
         if (puntosCliente > puntosServidor) {
             resultado = nombre + ": Gana " + puntosCliente + "-" + puntosServidor + " contra el servidor.";
@@ -298,7 +283,6 @@ class HiloServidor implements Runnable {
         return resultado;
     }
 
-    
     /**
      * Transformar el tipo de número aleatorio en una forma de la mano
      *
@@ -306,7 +290,7 @@ class HiloServidor implements Runnable {
      * @return
      */
     public static String selectorMano(int mano) {
-        String eleccion="";
+        String eleccion = "";
         switch (mano) {
             case 1 ->
                 eleccion = "Piedra";
@@ -317,7 +301,7 @@ class HiloServidor implements Runnable {
         }
         return eleccion;
     }
-    
+
     /**
      * Método que crea el archivo con los resultados del juego 1
      *
@@ -337,7 +321,6 @@ class HiloServidor implements Runnable {
         }
     }
 
-    
     /**
      * Método que crea el archivo con los resultados del juego 2
      *
@@ -356,8 +339,7 @@ class HiloServidor implements Runnable {
         }
 
     }
-    
-    
+
     /**
      * Método que crea el archivo con los resultados del juego 3
      *
@@ -374,10 +356,5 @@ class HiloServidor implements Runnable {
             }
 
         }
-
     }
-
-    
-        
-        
-    }
+}

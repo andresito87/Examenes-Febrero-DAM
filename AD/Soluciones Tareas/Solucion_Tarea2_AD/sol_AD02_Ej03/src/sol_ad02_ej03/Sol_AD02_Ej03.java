@@ -38,9 +38,9 @@ public class Sol_AD02_Ej03 {
      */
     public static void main(String[] args) {
         // Datos para la conexion //
-        String url = "jdbc:mysql://localhost:3306/centroseducacioninfantil";
+        String url = "jdbc:mysql://localhost:3307/centroseducacioninfantil";
         String user = "root";
-        String password = "root";
+        String password = "admin";
         Connection con = null;
         try {
             // Establecer conexión con la base de datos //

@@ -1,9 +1,5 @@
 package tarea1ejer2;
 
-/**
- *
- * @author LuisRosillo <>
- */
 public class Principal {
 
     /**

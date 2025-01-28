@@ -1,19 +1,11 @@
 package tarea2;
-
 import java.util.Scanner;
 
-/**
- *
- * @author 
- */
 public class SimuladorCliente {
-
-
     public static void main(String[] args) {
 
         int jugadoresJuego1, jugadoresJuego2, jugadoresJuego3;
 
-        
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Cuantos jugadores para el juego 1? (adivinar un numero): ");
@@ -59,9 +51,7 @@ public class SimuladorCliente {
                 System.err.println("Error al esperar el hilo: " + e.getMessage());
             }
         }
-
         System.out.println("\nSi1mulacion de clientes terminada.");
-
     }
 }
 

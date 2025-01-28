@@ -1,15 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
- */
 package clinica_veterinaria;
 
 import java.awt.Component;
 import java.awt.Container;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
+import javax.swing.JSpinner;
 import javax.swing.JTextField;
+import javax.swing.SpinnerDateModel;
 
 /**
  *
@@ -25,6 +24,17 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         initComponents();
         this.setTitle("Añadir nuevo cliente");
         this.setLocationRelativeTo(null);
+
+        // Crear el modelo del Spinner (SpinnerDateModel)
+        SpinnerDateModel dateModel = new SpinnerDateModel();
+        dateModel.setValue(new Date()); // Establece la fecha actual como valor inicial
+
+        // Asignar el modelo al JSpinner (jSpinner1)
+        jSpinner1.setModel(dateModel);
+
+        // Configurar el editor del Spinner con el formato deseado
+        JSpinner.DateEditor dateEditor = new JSpinner.DateEditor(jSpinner1, "dd/MM/yyyy");
+        jSpinner1.setEditor(dateEditor);
     }
 
     /**
@@ -63,11 +73,11 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         jLabel4 = new javax.swing.JLabel();
         jComboBoxTipo = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        jFormattedTextFieldFecha = new javax.swing.JFormattedTextField();
         jPanelSexo = new javax.swing.JPanel();
         jRadioButtonMacho = new javax.swing.JRadioButton();
         jRadioButtonHembra = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
         jPanel1 = new javax.swing.JPanel();
         jButtonGuardar = new javax.swing.JButton();
         jButtonCancelar = new javax.swing.JButton();
@@ -207,92 +217,19 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         jPanelCliente.add(jTextFieldDireccion, gridBagConstraints);
 
         jPanelMascota.setBackground(new java.awt.Color(255, 204, 0));
-        jPanelMascota.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setText("Nombre:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 61, 0, 0);
-        jPanelMascota.add(jLabel1, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 9;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 4;
-        gridBagConstraints.gridheight = 3;
-        gridBagConstraints.ipadx = 108;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(9, 5, 0, 0);
-        jPanelMascota.add(jTextFieldNombreMascota, gridBagConstraints);
 
         jLabelCliente.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabelCliente.setText("Mascota");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.ipady = 27;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(0, 14, 0, 0);
-        jPanelMascota.add(jLabelCliente, gridBagConstraints);
 
         jLabel2.setText("Nº Identificación:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(9, 106, 0, 0);
-        jPanelMascota.add(jLabel2, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 4;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 84;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
-        jPanelMascota.add(jTextFieldNumIdentificacion, gridBagConstraints);
 
         jLabel4.setText("Tipo:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(34, 106, 0, 0);
-        jPanelMascota.add(jLabel4, gridBagConstraints);
 
         jComboBoxTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perro", "Gato", "Ave", "Reptil", "Otro" }));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 44;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(31, 6, 13, 0);
-        jPanelMascota.add(jComboBoxTipo, gridBagConstraints);
 
         jLabel5.setText("Fecha de nacimiento:(dd/MM/yyyy)");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(34, 5, 0, 0);
-        jPanelMascota.add(jLabel5, gridBagConstraints);
-
-        jFormattedTextFieldFecha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 12;
-        gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 98;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(31, 6, 13, 0);
-        jPanelMascota.add(jFormattedTextFieldFecha, gridBagConstraints);
 
         jPanelSexo.setBackground(new java.awt.Color(255, 204, 0));
         jPanelSexo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
@@ -336,14 +273,69 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
                 .addGap(22, 22, 22))
         );
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 13;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 6;
-        gridBagConstraints.ipadx = 20;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(21, 84, 13, 44);
-        jPanelMascota.add(jPanelSexo, gridBagConstraints);
+        javax.swing.GroupLayout jPanelMascotaLayout = new javax.swing.GroupLayout(jPanelMascota);
+        jPanelMascota.setLayout(jPanelMascotaLayout);
+        jPanelMascotaLayout.setHorizontalGroup(
+            jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                .addGap(69, 69, 69)
+                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(6, 6, 6)
+                        .addComponent(jTextFieldNumIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(6, 6, 6)
+                        .addComponent(jComboBoxTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(5, 5, 5)
+                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addGap(9, 9, 9)
+                        .addComponent(jLabelCliente))
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabel1)
+                        .addGap(6, 6, 6)
+                        .addComponent(jTextFieldNombreMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(121, 121, 121)
+                .addComponent(jPanelSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanelMascotaLayout.setVerticalGroup(
+            jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                .addGap(65, 65, 65)
+                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel2))
+                    .addComponent(jTextFieldNumIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel4))
+                    .addComponent(jComboBoxTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                .addComponent(jLabelCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel1))
+                    .addComponent(jTextFieldNombreMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanelMascotaLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jPanelSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 102));
         jPanel1.setLayout(new java.awt.GridBagLayout());
@@ -402,7 +394,7 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jPanelMascota, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanelCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanelTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -527,11 +519,6 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
             errores.append("Debe seleccionar el sexo (Macho o Hembra).\n");
         }
 
-        // Verificar que el campo de fecha no esté vacío y sea válido
-        if (jFormattedTextFieldFecha.getText().trim().isEmpty() || !esFechaValida(jFormattedTextFieldFecha.getText())) {
-            errores.append("La fecha de nacimiento debe estar en formato dd/MM/yyyy y ser válida.\n");
-        }
-
         // Verificar si hubo errores
         if (errores.length() > 0) {
             // Mostrar los errores acumulados
@@ -638,7 +625,6 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
     private javax.swing.JButton jButtonGuardar;
     private javax.swing.JButton jButtonLimpiar;
     private javax.swing.JComboBox<String> jComboBoxTipo;
-    private javax.swing.JFormattedTextField jFormattedTextFieldFecha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -660,6 +646,7 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
     private javax.swing.JPanel jPanelTitulo;
     private javax.swing.JRadioButton jRadioButtonHembra;
     private javax.swing.JRadioButton jRadioButtonMacho;
+    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextFieldDireccion;
     private javax.swing.JTextField jTextFieldEmail;
     private javax.swing.JTextField jTextFieldNombreCliente;

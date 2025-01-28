@@ -3,10 +3,6 @@ package tarea1ejer2;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- *
- * @author LuisRosillo <>
- */
 class Almacen {
     private final int[] array;
     private int contador = 0; // Número de elementos en el buffer

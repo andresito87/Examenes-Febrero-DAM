@@ -3,10 +3,6 @@ package tarea1ejer1;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- *
- * @author LuisRosillo <>
- */
 public class Cadenas {
 
     /**
@@ -45,7 +41,8 @@ public class Cadenas {
                 
                 //Rellenamos cada palabra con el número de sílabas
                 for(int j = 0; j < numSilabas; j++){ 
-                    palabra=palabra.concat(silabas[r.nextInt(silabas.length)]); //Añadimos la silaba a la palabra
+                    //Añadimos la silaba a la palabra
+                    palabra=palabra.concat(silabas[r.nextInt(silabas.length)]); 
                 }
                 
                 System.out.println(palabra);

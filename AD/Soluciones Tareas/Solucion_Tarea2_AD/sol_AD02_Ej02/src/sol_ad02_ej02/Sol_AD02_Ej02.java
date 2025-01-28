@@ -1,18 +1,23 @@
 /*
  * SOLUCION Ejercicio 2:
  *
- * Crea un proyecto en Netbeans con nombre AD02_Ej02_ApellidosNombre que establezca conexión con la BD y muestre la 
- * información obtenida, resultado de implementar a través de sentencias preparadas y parametrizadas las siguientes 
+ * Crea un proyecto en Netbeans con nombre AD02_Ej02_ApellidosNombre que 
+ * establezca conexión con la BD y muestre la información obtenida, resultado 
+ * de implementar a través de sentencias preparadas y parametrizadas las siguientes 
  * consultas, por la salida estándar:
  * Consulta 1: Educadores que trabajan en una guardería indicada por su nombre.
- * Consulta 2: Para cada guardería, obtener el número de educadores que trabajan en dicha guardería.
- * Consulta 3: Calcular la cantidad de presupuesto (cantidad de dinero) gastado en el salario de los educadores de una 
- * determinada guardería que se pasará como parámetro (se pasará su código).
- * Debes gestionar las posibles excepciones y errores que puedan presentarse, así como el cierre de recursos utilizados
- * de forma adecuada si la aplicación dejara de funcionar (usa la sentencia try-catch-finally o equivalente).
+ * Consulta 2: Para cada guardería, obtener el número de educadores que trabajan 
+ * en dicha guardería.
+ * Consulta 3: Calcular la cantidad de presupuesto (cantidad de dinero) gastado en 
+ * el salario de los educadores de una determinada guardería que se pasará como 
+ * parámetro (se pasará su código).
+ * Debes gestionar las posibles excepciones y errores que puedan presentarse, 
+ * así como el cierre de recursos utilizados de forma adecuada si la aplicación 
+ * dejara de funcionar (usa la sentencia try-catch-finally o equivalente).
  *
- * Para la correcta ejecución de este proyecto, se deberá haber añadido en las bibliotecas del proyecto el conectror (.jar) 
- * de MySQL que posibilita la conexión con la base de datos.
+ * Para la correcta ejecución de este proyecto, se deberá haber añadido en las 
+ * bibliotecas del proyecto el conectror (.jar) de MySQL que posibilita la 
+ * conexión con la base de datos.
  */
 package sol_ad02_ej02;
 
@@ -35,9 +40,9 @@ public class Sol_AD02_Ej02 {
      */
     public static void main(String[] args) {
         // Datos para la conexion //
-        String url = "jdbc:mysql://localhost:3306/centroseducacioninfantil";
+        String url = "jdbc:mysql://localhost:3307/centroseducacioninfantil";
         String user = "root";
-        String password = "root";
+        String password = "admin";
         Connection con = null;
         try {
             // Establecer conexión con la base de datos //

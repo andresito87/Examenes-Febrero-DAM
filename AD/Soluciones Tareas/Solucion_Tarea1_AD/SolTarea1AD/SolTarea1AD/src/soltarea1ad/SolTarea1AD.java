@@ -3,15 +3,19 @@
  * Proyecto que resuelve los ejercicios 2 y 3 con los siguientes enunciados:
  * 
  * EJERCICIO 2.
- * Esta tarea vamos a crear un programa en Java, que permite introducir el nombre, apellidos, y e-mail de un usuario 
- * mediante un menú que pida estos datos y los grabe de forma secuencial en un fichero llamado "datosContacto.dat" 
- * del directorio local del proyecto. Sería necesario introducir un carácter como por ejemplo $ para separar un campo 
- * de otro. Deberás documentar bien tu código así como realizar el adecuado manejo de las posibles excepciones.
+ * Esta tarea vamos a crear un programa en Java, que permite introducir el nombre, apellidos,  
+ * y e-mail de un usuario mediante un menú que pida estos datos y los grabe de forma 
+ * secuencial en un fichero llamado "datosContacto.dat" del directorio local del proyecto
+ * . Sería necesario introducir un carácter como por ejemplo $ para separar un campo 
+ * de otro. Deberás documentar bien tu código así como realizar el adecuado 
+ * manejo de las posibles excepciones.
  * EJERCICIO 3.
- * Crea un programa en Java, que permita leer el fichero llamado "datosContacto.dat" del ejercicio anterior del 
- * directorio datos y permita mostrarlos por pantalla de forma secuencial, también habría que contar el número de 
- * registros que existen en el fichero. Se entiende por un registro cada línea creada por cada uno de los campos. 
- * Deberás documentar bien tu código así como realizar el adecuado manejo de las posibles excepciones.
+ * Crea un programa en Java, que permita leer el fichero llamado "datosContacto.dat" 
+ * del ejercicio anterior del directorio datos y permita mostrarlos por pantalla 
+ * de forma secuencial, también habría que contar el número de registros que existen 
+ * en el fichero. Se entiende por un registro cada línea creada por cada uno de los campos. 
+ * Deberás documentar bien tu código así como realizar el adecuado manejo de las 
+ * posibles excepciones.
  */
 package soltarea1ad;
 
@@ -46,7 +50,7 @@ public class SolTarea1AD {
 
             switch (opcion) {
                 case 1:
-                    registrarUsuario();
+                    registrarUsuario(scanner);
                     break;
                 case 2:
                     mostrarFichero();
@@ -61,10 +65,8 @@ public class SolTarea1AD {
         }
     }
 
-    private static void registrarUsuario() {
+    private static void registrarUsuario(Scanner scanner) {
         try {
-            Scanner scanner = new Scanner(System.in);
-
             System.out.print("Nombre del usuario: ");
             String nombre = scanner.nextLine();
 
@@ -90,7 +92,6 @@ public class SolTarea1AD {
                 bufferedWriter.newLine();
             }
             fileWriter.close();
-            scanner.close();
             
             System.out.println("Usuario registrado correctamente.");
         } catch (IOException e) {

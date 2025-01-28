@@ -28,8 +28,6 @@ public class Cliente implements Runnable {
         this.numeroJuego = numeroJuego;
     }
 
-    
-
     /**
      * Método run que ejecuta los diferentes inicios de los juegos
      */

@@ -2,10 +2,6 @@ package tarea1ejer2;
 
 import java.util.Random;
 
-/**
- *
- * @author LuisRosillo <>
- */
 class Productor extends Thread {
     private final Almacen almacen;
     private final Random random = new Random();

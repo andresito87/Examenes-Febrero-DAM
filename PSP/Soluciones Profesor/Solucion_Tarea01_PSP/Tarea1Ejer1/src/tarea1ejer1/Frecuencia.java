@@ -4,10 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- *
- * @author LuisRosillo <>
- */
 public class Frecuencia {
     public static void main(String[] args) {
         try {
@@ -15,7 +11,6 @@ public class Frecuencia {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             String linea; 
             
-
             while((linea = br.readLine()) != null){
                 if(linea.contains("Indica el número")){
                     System.out.print(linea);
@@ -58,5 +53,4 @@ public class Frecuencia {
         }
 
     }
-    
 }

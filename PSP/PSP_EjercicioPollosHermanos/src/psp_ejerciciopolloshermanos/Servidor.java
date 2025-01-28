@@ -18,7 +18,6 @@ public class Servidor implements Runnable {
     private static int contadorClientes = 0;
     private static int cantidadPollosDiaria = 100;
     private static int cantidadPatatasDiaria = 100;
-    private static Object candado;
     private final int numeroCliente;
     private final Socket skCliente;
 
