@@ -64,8 +64,8 @@ public class PruebaSliderVol extends javax.swing.JFrame {
         sliderVolComponente2.setStringPainted(true);
         sliderVolComponente2.setValue(50);
         sliderVolComponente2.addRangoAlcanzadoListener(new slidervolapg.SliderVolComponente.RangoAlcanzadoListener() {
-            public void zonaVolumenMuyBajoAlcanzada(slidervolapg.SliderVolComponente.RangoAlcanzado evt) {
-                sliderVolComponente2ZonaVolumenMuyBajoAlcanzada(evt);
+            public void zonaVolumenAltoAlcanzada(slidervolapg.SliderVolComponente.RangoAlcanzado evt) {
+                sliderVolComponente2ZonaVolumenAltoAlcanzada(evt);
             }
             public void zonaVolumenBajoAlcanzada(slidervolapg.SliderVolComponente.RangoAlcanzado evt) {
                 sliderVolComponente2ZonaVolumenBajoAlcanzada(evt);
@@ -73,8 +73,8 @@ public class PruebaSliderVol extends javax.swing.JFrame {
             public void zonaVolumenMedioAlcanzada(slidervolapg.SliderVolComponente.RangoAlcanzado evt) {
                 sliderVolComponente2ZonaVolumenMedioAlcanzada(evt);
             }
-            public void zonaVolumenAltoAlcanzada(slidervolapg.SliderVolComponente.RangoAlcanzado evt) {
-                sliderVolComponente2ZonaVolumenAltoAlcanzada(evt);
+            public void zonaVolumenMuyBajoAlcanzada(slidervolapg.SliderVolComponente.RangoAlcanzado evt) {
+                sliderVolComponente2ZonaVolumenMuyBajoAlcanzada(evt);
             }
         });
 

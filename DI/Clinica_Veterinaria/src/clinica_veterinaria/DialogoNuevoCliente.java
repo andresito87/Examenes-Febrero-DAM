@@ -76,7 +76,6 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         jPanelSexo = new javax.swing.JPanel();
         jRadioButtonMacho = new javax.swing.JRadioButton();
         jRadioButtonHembra = new javax.swing.JRadioButton();
-        jLabel3 = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
         jPanel1 = new javax.swing.JPanel();
         jButtonGuardar = new javax.swing.JButton();
@@ -98,12 +97,12 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         jLabelCliente1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelCliente1.setText("Cliente");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridx = 10;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.ipady = 15;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 5, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(6, 8, 0, 0);
         jPanelCliente.add(jLabelCliente1, gridBagConstraints);
 
         jLabelDni.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -112,7 +111,7 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(27, 45, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(27, 54, 0, 0);
         jPanelCliente.add(jLabelDni, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -134,9 +133,9 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         gridBagConstraints.insets = new java.awt.Insets(30, 18, 0, 0);
         jPanelCliente.add(jLabelDni1, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridx = 10;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridwidth = 3;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.ipadx = 90;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -145,7 +144,7 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
 
         jLabelDni2.setText("Segundo Apellido:");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 27;
+        gridBagConstraints.gridx = 13;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 6;
@@ -153,13 +152,13 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         gridBagConstraints.insets = new java.awt.Insets(30, 18, 0, 0);
         jPanelCliente.add(jLabelDni2, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 28;
+        gridBagConstraints.gridx = 14;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 34;
+        gridBagConstraints.gridwidth = 16;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.ipadx = 90;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(27, 6, 0, 45);
+        gridBagConstraints.insets = new java.awt.Insets(27, 6, 0, 36);
         jPanelCliente.add(jTextFieldSegundoApe, gridBagConstraints);
 
         jLabelDni4.setText("Teléfono:");
@@ -168,7 +167,7 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         gridBagConstraints.gridy = 4;
         gridBagConstraints.ipadx = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(21, 62, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(21, 53, 0, 0);
         jPanelCliente.add(jLabelDni4, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -182,16 +181,15 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
 
         jLabelDni5.setText("Email:");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 14;
+        gridBagConstraints.gridx = 10;
         gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(21, 44, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(21, 35, 0, 0);
         jPanelCliente.add(jLabelDni5, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 21;
+        gridBagConstraints.gridx = 11;
         gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 33;
+        gridBagConstraints.gridwidth = 15;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 212;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
@@ -204,35 +202,99 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         gridBagConstraints.gridy = 6;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(21, 97, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(21, 88, 0, 0);
         jPanelCliente.add(jLabelDni3, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 6;
-        gridBagConstraints.gridwidth = 26;
+        gridBagConstraints.gridwidth = 12;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 371;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 6, 32, 0);
+        gridBagConstraints.insets = new java.awt.Insets(18, 6, 9, 0);
         jPanelCliente.add(jTextFieldDireccion, gridBagConstraints);
 
         jPanelMascota.setBackground(new java.awt.Color(255, 204, 0));
+        jPanelMascota.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setText("Nombre:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 7;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(12, 61, 0, 0);
+        jPanelMascota.add(jLabel1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.ipadx = 108;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(9, 5, 0, 0);
+        jPanelMascota.add(jTextFieldNombreMascota, gridBagConstraints);
 
         jLabelCliente.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabelCliente.setText("Mascota");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 7;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipady = 27;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 14, 0, 0);
+        jPanelMascota.add(jLabelCliente, gridBagConstraints);
 
         jLabel2.setText("Nº Identificación:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(9, 69, 0, 0);
+        jPanelMascota.add(jLabel2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 84;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
+        jPanelMascota.add(jTextFieldNumIdentificacion, gridBagConstraints);
 
         jLabel4.setText("Tipo:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 69, 0, 0);
+        jPanelMascota.add(jLabel4, gridBagConstraints);
 
         jComboBoxTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perro", "Gato", "Ave", "Reptil", "Otro" }));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 44;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 6, 0, 0);
+        jPanelMascota.add(jComboBoxTipo, gridBagConstraints);
 
-        jLabel5.setText("Fecha de nacimiento:(dd/MM/yyyy)");
+        jLabel5.setText("Fecha de nacimiento:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 7;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(21, 6, 0, 0);
+        jPanelMascota.add(jLabel5, gridBagConstraints);
 
         jPanelSexo.setBackground(new java.awt.Color(255, 204, 0));
-        jPanelSexo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
+        jPanelSexo.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Sexo", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
 
         jRadioButtonMacho.setBackground(new java.awt.Color(255, 204, 0));
         buttonGroupSexo.add(jRadioButtonMacho);
@@ -247,8 +309,6 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         buttonGroupSexo.add(jRadioButtonHembra);
         jRadioButtonHembra.setLabel("Hembra");
 
-        jLabel3.setText("Sexo:");
-
         javax.swing.GroupLayout jPanelSexoLayout = new javax.swing.GroupLayout(jPanelSexo);
         jPanelSexo.setLayout(jPanelSexoLayout);
         jPanelSexoLayout.setHorizontalGroup(
@@ -257,85 +317,35 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanelSexoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jRadioButtonHembra)
-                    .addComponent(jRadioButtonMacho)
-                    .addComponent(jLabel3))
+                    .addComponent(jRadioButtonMacho))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanelSexoLayout.setVerticalGroup(
             jPanelSexoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelSexoLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jRadioButtonMacho)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jRadioButtonHembra)
-                .addGap(22, 22, 22))
+                .addGap(10, 10, 10))
         );
 
-        javax.swing.GroupLayout jPanelMascotaLayout = new javax.swing.GroupLayout(jPanelMascota);
-        jPanelMascota.setLayout(jPanelMascotaLayout);
-        jPanelMascotaLayout.setHorizontalGroup(
-            jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(6, 6, 6)
-                        .addComponent(jTextFieldNumIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(6, 6, 6)
-                        .addComponent(jComboBoxTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(5, 5, 5)
-                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addGap(9, 9, 9)
-                        .addComponent(jLabelCliente))
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(jLabel1)
-                        .addGap(6, 6, 6)
-                        .addComponent(jTextFieldNombreMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(121, 121, 121)
-                .addComponent(jPanelSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanelMascotaLayout.setVerticalGroup(
-            jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                .addGap(65, 65, 65)
-                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel2))
-                    .addComponent(jTextFieldNumIdentificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel4))
-                    .addComponent(jComboBoxTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                .addComponent(jLabelCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(jLabel1))
-                    .addComponent(jTextFieldNombreMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(jPanelMascotaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(jPanelMascotaLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jPanelSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 13;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = 8;
+        gridBagConstraints.ipadx = 20;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 90, 6, 75);
+        jPanelMascota.add(jPanelSexo, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 11;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.ipadx = 63;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 6, 0, 0);
+        jPanelMascota.add(jSpinner1, gridBagConstraints);
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 102));
         jPanel1.setLayout(new java.awt.GridBagLayout());
@@ -394,7 +404,7 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelMascota, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addComponent(jPanelCliente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanelTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -406,7 +416,7 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanelCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelMascota, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -627,7 +637,6 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
     private javax.swing.JComboBox<String> jComboBoxTipo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabelCliente;
