@@ -29,12 +29,16 @@ public class SliderVolPropertyEditor extends PropertyEditorSupport {
     public String getJavaInitializationString() {
         RangosVolumen rangos = (RangosVolumen) getValue();
         // devuelve la cadena necesaria para generar el editor de rangos
-        return ("new slidervolapg.RangosVolumen(" + rangos.getRango1() + ", " + rangos.getRango2() + ", " + rangos.getRango3() + ")");
+        return ("new slidervolapg.RangosVolumen(" 
+                + rangos.getRango1() + ", " 
+                + rangos.getRango2() + ", " 
+                + rangos.getRango3() + ")");
     }
 
     @Override
     public Object getValue() {
-        return this.sliderVolPanel.getSelectedValue(); // devuelve el objeto Rangos con los valores inializados
+        // devuelve el objeto Rangos con los valores inializados
+        return this.sliderVolPanel.getSelectedValue(); 
     }
 
 }

@@ -490,22 +490,26 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         StringBuilder errores = new StringBuilder(); // Para acumular los mensajes de error
 
         // Verificar que el campo "NombreCliente" no esté vacío y sea alfabético
-        if (jTextFieldNombreCliente.getText().trim().isEmpty() || !esAlfabetico(jTextFieldNombreCliente.getText())) {
+        if (jTextFieldNombreCliente.getText().trim().isEmpty() 
+                || !esAlfabetico(jTextFieldNombreCliente.getText())) {
             errores.append("El nombre del cliente debe ser un texto alfabético.\n");
         }
 
         // Verificar que el campo "PrimerApe" no esté vacío y sea alfabético
-        if (jTextFieldPrimerApe.getText().trim().isEmpty() || !esAlfabetico(jTextFieldPrimerApe.getText())) {
+        if (jTextFieldPrimerApe.getText().trim().isEmpty() 
+                || !esAlfabetico(jTextFieldPrimerApe.getText())) {
             errores.append("El primer apellido debe ser un texto alfabético.\n");
         }
 
         // Verificar que el campo "SegundoApe" sea alfabético (opcional, puede estar vacío)
-        if (!jTextFieldSegundoApe.getText().trim().isEmpty() && !esAlfabetico(jTextFieldSegundoApe.getText())) {
+        if (!jTextFieldSegundoApe.getText().trim().isEmpty() 
+                && !esAlfabetico(jTextFieldSegundoApe.getText())) {
             errores.append("El segundo apellido debe ser un texto alfabético.\n");
         }
 
         // Verificar que el campo "NumIdentificacion" contenga solo dígitos
-        if (jTextFieldNumIdentificacion.getText().trim().isEmpty() || !esNumerico(jTextFieldNumIdentificacion.getText())) {
+        if (jTextFieldNumIdentificacion.getText().trim().isEmpty() 
+                || !esNumerico(jTextFieldNumIdentificacion.getText())) {
             errores.append("El número de identificación debe contener solo dígitos.\n");
         }
 
@@ -532,10 +536,18 @@ public class DialogoNuevoCliente extends javax.swing.JDialog {
         // Verificar si hubo errores
         if (errores.length() > 0) {
             // Mostrar los errores acumulados
-            JOptionPane.showMessageDialog(this, errores.toString(), "Errores de validación", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    this, 
+                    errores.toString(), 
+                    "Errores de validación", 
+                    JOptionPane.ERROR_MESSAGE);
         } else {
             // Continuar con la lógica de guardado
-            JOptionPane.showMessageDialog(this, "Todos los datos son válidos. Guardando...", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(
+                    this, 
+                    "Todos los datos son válidos. Guardando...", 
+                    "Éxito", 
+                    JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
