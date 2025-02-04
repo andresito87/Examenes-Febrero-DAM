@@ -1,9 +1,7 @@
 package clinica_veterinaria;
 
 import java.awt.Color;
-import java.awt.Insets;
 import javax.swing.JOptionPane;
-import javax.swing.border.LineBorder;
 
 /**
  *

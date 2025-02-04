@@ -1,3 +1,4 @@
+// String personalizado con separadores $ para el almacenado y facil recuperacion
 String datosUsuario = nombre + "$" + apellidos + "$" + email;
 
 //********************************** ESCRITURA EN ARCHIVO *************************************/
@@ -34,6 +35,7 @@ try (BufferedReader bufferedReader = new BufferedReader(fileReader)) {
     contadorRegistros = 0;
     System.out.println("Datos de usuarios:");
     while ((linea = bufferedReader.readLine()) != null) {
+        // buscamos el caracter separador
         String[] campos = linea.split("\\$");
         
         if (campos.length == 3) {

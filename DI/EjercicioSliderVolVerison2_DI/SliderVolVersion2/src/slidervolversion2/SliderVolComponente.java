@@ -1,17 +1,17 @@
-package slidervolapg;
+package slidervolversion2;
 
 import java.awt.Color;
 import java.awt.Font;
 import java.io.Serializable;
 import java.util.EventListener;
-import javax.swing.JProgressBar;
+import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 
 /**
  *
  * @author andres
  */
-public class SliderVolComponente extends JProgressBar implements Serializable {
+public class SliderVolComponente extends JSlider implements Serializable {
 
     public RangosVolumen rangos;
     public Color color1, color2, color3, color4;
@@ -62,14 +62,6 @@ public class SliderVolComponente extends JProgressBar implements Serializable {
         this.color3 = color3;
     }
 
-    public Color getColor4() {
-        return color4;
-    }
-
-    public void setColor4(Color color4) {
-        this.color4 = color4;
-    }
-
     public class RangoAlcanzado extends java.util.EventObject {
 
         public RangoAlcanzado(Object source) {
@@ -78,8 +70,6 @@ public class SliderVolComponente extends JProgressBar implements Serializable {
     }
 
     public interface RangoAlcanzadoListener extends EventListener {
-
-        void zonaVolumenMuyBajoAlcanzada(RangoAlcanzado rangoAlcanzado);
 
         void zonaVolumenBajoAlcanzada(RangoAlcanzado rangoAlcanzado);
 
@@ -104,17 +94,17 @@ public class SliderVolComponente extends JProgressBar implements Serializable {
         // Determinar la zona actual basándonos en el valor actual
         int zonaActual;
         if (valorActual < this.rangos.getRango1()) {
-            zonaActual = 1; // Zona Muy Bajo
-            this.setForeground(this.color1);
+            zonaActual = 1; // Zona Bajo
+            this.setOpaque(true);
+            this.setBackground(this.getColor1());
         } else if (valorActual < this.rangos.getRango2()) {
-            zonaActual = 2; // Zona Bajo
-            this.setForeground(this.color2);
-        } else if (valorActual < this.rangos.getRango3()) {
-            zonaActual = 3; // Zona Medio
-            this.setForeground(this.color3);
+            zonaActual = 2; // Zona Medio
+            this.setOpaque(true);
+            this.setBackground(this.getColor2());
         } else {
-            zonaActual = 4; // Zona Alto
-            this.setForeground(this.color4);
+            zonaActual = 3; // Zona Alto
+            this.setOpaque(true);
+            this.setBackground(this.getColor3());
         }
 
         // Verificar si la zona ha cambiado
@@ -123,15 +113,12 @@ public class SliderVolComponente extends JProgressBar implements Serializable {
             if (listener != null) {
                 switch (zonaActual) {
                     case 1:
-                        listener.zonaVolumenMuyBajoAlcanzada(new RangoAlcanzado(this));
-                        break;
-                    case 2:
                         listener.zonaVolumenBajoAlcanzada(new RangoAlcanzado(this));
                         break;
-                    case 3:
+                    case 2:
                         listener.zonaVolumenMedioAlcanzada(new RangoAlcanzado(this));
                         break;
-                    case 4:
+                    case 3:
                         listener.zonaVolumenAltoAlcanzada(new RangoAlcanzado(this));
                         break;
                 }
